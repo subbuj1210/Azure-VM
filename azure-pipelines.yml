@@ -27,3 +27,4 @@ steps:
     command: 'apply'
     environmentServiceNameAzureRM: 'Azure-Connection-SC'
     workingDirectory: '$(System.DefaultWorkingDirectory)/terraform-manifests/'
+    commandOptions: '--auto-aprrove'
