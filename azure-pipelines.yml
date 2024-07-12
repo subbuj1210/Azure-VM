@@ -19,7 +19,7 @@ steps:
     backendAzureRmStorageAccountName: 'shoppingclient553'
     backendAzureRmContainerName: 'terraform-vm'
     backendAzureRmKey: 'terraform.tfstate'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/rg/'
 - task: TerraformTaskV4@4
   inputs:
     provider: 'azurerm'
