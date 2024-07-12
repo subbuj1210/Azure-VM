@@ -21,3 +21,9 @@ steps:
     backendAzureRmContainerName: 'terraform-vm'
     backendAzureRmKey: 'terraform.tfstate'
     workingDirectory: '$(System.DefaultWorkingDirectory)/terraform-manifests/'
+- task: TerraformTaskV4@4
+  inputs:
+    provider: 'azurerm'
+    command: 'apply'
+    environmentServiceNameAzureRM: 'Azure-Connection-SC'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/terraform-manifests/'
