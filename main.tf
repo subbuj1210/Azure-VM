@@ -9,7 +9,7 @@ variable "rg_location" {
   default = "westus"
 }
 
-module "app1-rg" {
+module "main" {
         source = "../rg"
         rg_name = var.rg_name
         rg_location = var.rg_location
