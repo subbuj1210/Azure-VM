@@ -12,7 +12,7 @@ terraform {
     resource_group_name   = "shoppingclient"
     storage_account_name  = "shoppingclient553"
     container_name        = "terraform-vm"
-    key                   = "terraform.tfstate"
+    key                   = "dev.tfstate"
   } 
 }
 
