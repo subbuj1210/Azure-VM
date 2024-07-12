@@ -11,8 +11,8 @@ terraform {
   backend "azurerm" {
     resource_group_name   = "shoppingclient"
     storage_account_name  = "shoppingclient553"
-    container_name        = "terraform-vm"
-    key                   = "dev.tfstate"
+    container_name        = "azdiagextnresults"
+    key                   = "terraform.tfstate"
   } 
 }
 
