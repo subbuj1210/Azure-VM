@@ -11,6 +11,6 @@ variable "rg_location" {
 
 module "app1-rg" {
         source = "git@github.com:subbuj1210/terraform-azure-vm.git"
-        rg_name = var.rg_name
-        rg_location = var.rg_location
+        rg_name = "app1-rg"
+        rg_location = "westus"
 }
