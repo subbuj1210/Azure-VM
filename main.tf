@@ -10,7 +10,7 @@ variable "rg_location" {
 }
 
 module "app1-rg" {
-        source = "git@github.com:subbuj1210/Azure-VM.git"
+        source = "../rg"
         rg_name = var.rg_name
         rg_location = var.rg_location
 }
