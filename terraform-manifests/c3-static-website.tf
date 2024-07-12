@@ -1,6 +1,16 @@
+# Azure Resource Group Name
+variable "rg_name" {
+  type = string
+  default = "app1-rg"
+}
+# Azure Resources Location
+variable "rg_location" {
+  type = string
+  default = "westus"
+}
 
-# Call our Custom Terraform Module which we built earlier
-module "azure_static_website" {
-# Github Clone over SSH (if git SSH configured with your repo - https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
-source = "git@github.com:subbuj1210/terraform-azure-vm.git"
+module "app1-rg" {
+        source = "git@github.com:subbuj1210/terraform-azure-vm.git"
+        rg_name = var.rg_name
+        rg_location = var.rg_location
 }
