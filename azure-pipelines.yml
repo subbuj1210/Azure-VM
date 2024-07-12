@@ -19,3 +19,4 @@ steps:
     backendAzureRmStorageAccountName: 'shoppingclient553'
     backendAzureRmContainerName: 'terraform-vm'
     backendAzureRmKey: 'terraform.tfstate'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/rg'
