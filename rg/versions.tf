@@ -19,4 +19,4 @@ terraform {
     key                   = "terraform.tfstate"
   } 
 }
-}
+
